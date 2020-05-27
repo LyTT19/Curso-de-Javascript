@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background: rgb(88, 76, 68);
+            color: white;
+            font: normal 18pt Arial
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Não faço ideia do que eu to fazendo o pora</p>
+    <p>Acho que agora to praticando de verdade</p>
+    <p>Agora nois voa bruxão</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id= "msg">Clique em mim</div>
+    <div id= "seloco">Clique em mim não o carai</div>
+    <div id= "msg">Se loco Cachorreira</div>
+     
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var p2 = window.document.getElementsByTagName('p')[2]
+        var p3 = window.document.getElementsByTagName('p')[3]
+        var p4 = window.document.getElementsByTagName('p')[4]
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = window.document.querySelector('div#seloco')
+        d.style.background = 'green'
+        p1.style.background = 'blue'
+        p1.style.color = 'red'
+        p2.style.color = 'black'
+        //p2.innerHTML = 'ta doido'
+
+
+    </script>
+</body>
+</html>

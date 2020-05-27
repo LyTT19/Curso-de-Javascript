@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Nativo?</h1>
+    Você vive em <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function pais(){
+            var nativo = window.document.querySelector('input#nac')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você vive em <strong>${nativo.value.toUpperCase()}</strong>!</p>`
+
+            if(nativo.value.toUpperCase() != 'BRASIL' ){
+                res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+            }else{
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            }
+          
+        }
+    </script>
+</body>
+</html>
